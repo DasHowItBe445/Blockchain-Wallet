@@ -93,9 +93,9 @@ Create a `.env` file in the `backend/` directory:
 
 ```env
 # MongoDB Connection
-MONGODB_URI=mongodb://localhost:27017/trustfund-dao
+MONGODB_URI=xx
 # For MongoDB Atlas, use:
-# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/trustfund-dao
+# MONGODB_URI=xx
 
 # JWT Secret (use a strong random string in production)
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
@@ -470,7 +470,7 @@ npm start
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `MONGODB_URI` | MongoDB connection string | `mongodb://localhost:27017/trustfund-dao` |
+| `MONGODB_URI` | MongoDB connection string | `mongodb:` |
 | `JWT_SECRET` | Secret for JWT token signing | `your-secret-key` |
 | `PORT` | Server port | `5000` |
 | `NODE_ENV` | Environment mode | `development` |
