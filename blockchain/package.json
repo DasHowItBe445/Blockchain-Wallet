@@ -1,0 +1,37 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "NGO Funding Platform Smart Contracts",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:wallet": "hardhat run scripts/deploy-wallet-simple.js --network localhost",
+    "deploy:wallet:ignition": "hardhat run scripts/deploy-wallet.js --network localhost",
+    "fund:wallet": "hardhat run scripts/fund-wallet.js --network localhost",
+    "test:wallet": "hardhat run scripts/test-wallet.js --network localhost",
+    "deploy:escrow": "hardhat run scripts/deploy-escrow.js --network localhost",
+    "test:escrow": "hardhat run scripts/test-escrow.js --network localhost"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^4.0.3",
+    "@nomicfoundation/hardhat-ignition": "^3.0.6",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.1",
+    "@types/node": "^22.19.3",
+    "dotenv": "^16.3.1",
+    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.0.0",
+    "typescript": "~5.8.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "ethers": "^6.16.0",
+    "viem": "^2.43.3"
+  },
+  "type": "module"
+}

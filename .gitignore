@@ -1,0 +1,81 @@
+########################################
+# Node / JavaScript
+########################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+########################################
+# Environment variables
+########################################
+.env
+.env.*
+!.env.example
+
+########################################
+# Hardhat / Blockchain
+########################################
+cache/
+artifacts/
+ignition/deployments/
+typechain/
+coverage/
+coverage.json
+
+########################################
+# Frontend build output
+########################################
+build/
+dist/
+.vite/
+
+########################################
+# Backend
+########################################
+logs/
+*.log
+
+########################################
+# Database
+########################################
+data/
+*.sqlite
+*.db
+
+########################################
+# OS generated files
+########################################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+########################################
+# Editor / IDE
+########################################
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+########################################
+# Temporary / Misc
+########################################
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+*.orig
+
+########################################
+# Testing / Reports
+########################################
+test-results/
+reports/
